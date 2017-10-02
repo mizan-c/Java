@@ -1,7 +1,7 @@
 package com.company;
 
 /**
- * Created by TularJahaj on 3/22/2017.
+ * Created by Mizanur Rahman
  */
 public interface ServerListener {
     public void onNewClientJoin(int id, String name);

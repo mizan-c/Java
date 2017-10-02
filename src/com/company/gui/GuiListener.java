@@ -1,7 +1,7 @@
 package com.company.gui;
 
 /**
- * Created by TularJahaj on 3/23/2017.
+ * Created by Mizanur Rahman
  */
 public interface GuiListener {
     public void onClickSend(int id, String s);
