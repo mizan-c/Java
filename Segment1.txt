@@ -1,0 +1,19 @@
+//kanishkafghjkl;''
+printf("Copying from %s to %s ..... \n",infile,outfile);
+
+        char buf[1024];
+        int read = 0;
+
+        //  Read data in 1kb chunks and write to output file
+        while ((read = fread(buf, 1, 1024, in)) == 1024)
+        {
+            fwrite(buf, 1, 1024, out);
+        }
+
+        //  If there is any data left over write it out
+        fwrite(buf, 1, read, out);
+
+        fclose(out);
+        fclose(in);
+    return 0;
+}
